@@ -1,3 +1,6 @@
+html {
+  font-size: 2vw;
+}
 
 .App {
   text-align: center;
@@ -5,58 +8,43 @@
   color: #3a464d;
 }
 
+h1 {
+  color: #506a85;
+}
+
 .fake-header-one {
   background-color: #f5f7fa;
-  height: 50px;
 }
 
 .fake-header-two {
   background-color: #ffffff;
-  height: 70px;
   border-bottom: 1px solid #506a85;
 }
 
-
 #grant-header {
   margin: auto;
-  max-width: 100%;
-  height: 450px;
   background-image: url(./imgs/dancing.png);
   background-color: #00558785;
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 50px;
   text-align: left;
-  margin-bottom: 20px;
 }
 
-#grant-header div {
-  max-width: 40%;
-  height: 350px;
-  padding: 15px 20px 15px 100px;
-  margin-bottom: 20px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-#grant-header h1 {
-  font-size: 300%;
-  font-weight: 900;
-  letter-spacing: 2px;
+div.ui.horizontal.divider {
+  font-size: .75rem;
   color: #506a85;
 }
 
-#grant-header p {
-  font-size: x-large;
-  line-height: 2;
-  margin-bottom: 20px;
+#category-div {
+  margin: auto;
 }
 
-div.ui.card {
-  width: 400px;
-  max-width: 100%;
-  margin: 1em;
-  padding: .5em;
+button.ui.button.category {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  border: 2px outset #9bb6c5;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 div.grant-card-label {
@@ -71,35 +59,28 @@ div.grant-card-label .label {
 }
 
 div.grant-card {
-  width: 400px;
-  max-width: 100%;
   text-align: left;
-  margin: 1em;
   display: inline-block;
 }
 
 div.grant-card div.ui.header {
   font-family: 'Open Sans', sans-serif;
-
 }
+
 div.grant-card div.ui.huge.header {
   margin-bottom: 0;
-
 }
 
 div.grant-card div.ui.large.header {
   font-style: italic;
   color: #7e848a;
-  margin: 0 0 .5em;
-  letter-spacing: 1.5px;
   font-weight: 400;
 }
 
 div.grant-card-inner {
-  border: 1px solid #055878;
+  border: 1px solid #005587;
   border-radius: 10px;
   border-top-right-radius: 0;
-  padding: 1em;
   box-shadow: 2px 2px 5px 2px #bbc0c5;
 }
 
@@ -108,6 +89,116 @@ div.ui.grid>.row {
 }
 
 div.ui.grid {
-  padding: 1rem 0 1rem 0;
   font-weight: 500;
 }
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+  .fake-header-one {
+    height: 2.25rem;
+    max-height: 6vh;
+  }
+
+  .fake-header-two {
+    height: 2.75rem;
+    max-height: 9vh;
+  }
+
+  #grant-header {
+    max-width: 100%;
+    height: 17rem;
+    max-height: 45vh;
+    /* margin-bottom: 20px; */
+    box-shadow: 0 .5rem .5rem #adaeaf9c;
+
+  }
+
+  #grant-header div {
+    max-width: 50%;
+    max-height: 42vh;
+    height: 15rem;
+    padding: 2em 1.25em .9em 6em;
+    /* margin-bottom: 20px; */
+  }
+
+  #grant-header h1 {
+    font-size: 1.75rem;
+    font-weight: 900;
+    letter-spacing: .25rem;
+  }
+
+  #grant-header p {
+    font-size: .8rem;
+    line-height: 2;
+    margin-bottom: 20px;
+  }
+
+  #window {
+    padding: 3em;
+  }
+
+  #window h1 {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    margin-top: .75rem
+  }
+
+  div.ui.fluid.search.selection.dropdown.search-page-dropdown {
+    margin: .75rem auto .75rem auto;
+    max-width: 30%;
+  }
+
+  div.visible.menu.transition div.item {
+    font-size: .6rem;
+  }
+
+  div.ui.horizontal.divider {
+    margin: 1.25rem 0 1.75rem;
+  }
+
+  button.ui.button.category {
+    height: 2.75rem;
+    min-width: 6rem;
+    max-width: 8.5rem;
+    margin: .5rem 1rem;
+    font-size: .6rem;
+  }
+
+
+  div.grant-card {
+    width: 400px;
+    max-width: 100%;
+    margin: 1em;
+  }
+
+  div.grant-card div.ui.huge.header {
+    margin-bottom: 0;
+  }
+
+  div.grant-card div.ui.large.header {
+    margin: 0 0 .5em;
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+  }
+
+  div.grant-card-inner {
+    padding: 1em;
+  }
+
+  div.ui.grid {
+    padding: 1rem 0 1rem 0;
+  }
+}
+
+
+

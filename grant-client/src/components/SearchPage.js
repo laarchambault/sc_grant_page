@@ -13,15 +13,11 @@ import { Divider, Button, Dropdown } from 'semantic-ui-react'
 const SearchPage = props => {
 
     const stateDropdownCallback = e => {
-        // props.fetchGrants({states: [e.target.textContent]})
+        if(e.target.textContent === ""){
+            return
+        }
         props.setSelectedStates([e.target.textContent])
     }
-
-    // const categoryButtonCallback = categoryId => {
-    //     // props.fetchGrants(categoryObj)
-    //     debugger
-    //     props.setSelectedCategories(categoryId)
-    // }
 
     const createCategoryButton = (id, name) => {
         return <Button 
@@ -38,6 +34,7 @@ const SearchPage = props => {
             <div>
                 <h1>Search by State</h1>
                 <Dropdown
+                    className='search-page-dropdown'
                     placeholder='State'
                     fluid
                     search
@@ -47,9 +44,9 @@ const SearchPage = props => {
                 />
             </div>
             <Divider horizontal>OR</Divider>
-            <div>
+            <div id='category-div'>
                 <h1>Select a Category</h1>
-                {props.categories.map(cat => createCategoryButton(cat.id, cat.label))}
+                    {props.categories.map(cat => createCategoryButton(cat.id, cat.label))}
             </div>
         </div>
         

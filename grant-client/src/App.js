@@ -53,7 +53,7 @@ const App = () => {
       <div className='fake-header-one'></div>
       <div className='fake-header-two'></div>
       <GrantHeader />
-      <div className='window-background'>
+      <div id='window'>
       {(selectedCategories.length === 0) && (selectedStates.length === 0) ?
         <SearchPage 
           categories={categories}
@@ -70,10 +70,8 @@ const App = () => {
           fetchGrants={fetchGrants}
           grants={grants}
           />
-      }
+      }      
       </div>
-      
-      
     </div>
   );
   
