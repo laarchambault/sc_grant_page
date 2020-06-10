@@ -1,4 +1,3 @@
-//images and "Grant Writing Resources" wording
 import React from 'react'
 
 const GrantHeader = () => {
