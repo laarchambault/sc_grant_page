@@ -25,24 +25,24 @@ const category_name = props.grant.category.label
             <Header size='large'>{grant_name}</Header>
             <p>{grant_description}</p>
             <Header size='medium'>Available Contact Info</Header>
-            <Grid stackable divided>
-                <Grid.Row columns={2} verticalAlign='middle'>
+            <Grid className='grant-card' stackable divided>
+                <Grid.Row columns={2} verticalAlign='middle' >
                     <Grid.Column>
-                        <p>{contact_name}</p>
+                        <h5>{contact_name}</h5>
                     </Grid.Column>
                     <Grid.Column>
-                        <p size='tiny'>{address_1}</p>
+                        <h5 size='tiny'>{address_1}</h5>
                     </Grid.Column>
                 </Grid.Row>
-                <Grid.Row columns={3} verticalAlign='middle'>
+                <Grid.Row columns={3} verticalAlign='middle' >
                     <Grid.Column>
-                        <p size='tiny'>{city}</p>
+                        <h5 size='tiny'>{city}</h5>
                     </Grid.Column>
                     <Grid.Column>
-                        <p size='tiny'>{state}</p>
+                        <h5 size='tiny'>{state}</h5>
                     </Grid.Column>
                     <Grid.Column>
-                        <p size='tiny'>{zip}</p>
+                        <h5 size='tiny'>{zip}</h5>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

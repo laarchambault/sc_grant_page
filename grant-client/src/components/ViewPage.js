@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react'
 import GrantCard from './GrantCard'
 import { stateOptions } from './options'
-import { Dropdown, Grid } from 'semantic-ui-react'
+import { Dropdown, Grid, Segment, Dimmer, Loader, Divider } from 'semantic-ui-react'
 
 const ViewPage = props => {
     const {selectedCategories, setSelectedCategories, selectedStates, setSelectedStates, categories, grants} = props
@@ -36,32 +36,53 @@ const ViewPage = props => {
 
     return(
         <div id='view-page'>
-            <Dropdown
-                    placeholder='State'
-                    fluid
-                    multiple
-                    search
-                    selection
-                    closeOnChange
-                    options={stateOptions}
-                    onChange={(event, data) => setSelectedStates(data.value)}
-                    value={selectedStates}
-                />
-                <Dropdown
-                    placeholder='Category'
-                    fluid
-                    multiple
-                    search
-                    selection
-                    closeOnChange
-                    options={categoryOptions(categories)}
-                    onChange={(e, d) => setCategoryValues(d.value)}
-                    // onChange={(event, data) => props.setSelectedCategories(data.value)}
-                    value={categoryValues}
-                />
-                <Grid columns={3} stackable >
-                    {grants.map( grant => <GrantCard grant={grant} key={grant.id} />)}
+            <div>
+                <h1>Find Grants by</h1>
+            </div>
+            <Grid className='search-bar' columns={3} stackable>
+                <Grid.Column width={7}>
+                    <Dropdown
+                        placeholder='State'
+                        fluid
+                        multiple
+                        search
+                        selection
+                        closeOnChange
+                        options={stateOptions}
+                        onChange={(event, data) => setSelectedStates(data.value)}
+                        value={selectedStates}
+                    />
+                </Grid.Column>
+                <Grid.Column width={2}>
+                    <Divider vertical >AND</Divider>
+                </Grid.Column>
+                <Grid.Column width={7}>
+                    <Dropdown
+                        placeholder='Category'
+                        fluid
+                        multiple
+                        search
+                        selection
+                        closeOnChange
+                        options={categoryOptions(categories)}
+                        onChange={(e, d) => setCategoryValues(d.value)}
+                        // onChange={(event, data) => props.setSelectedCategories(data.value)}
+                        value={categoryValues}
+                    />
+                </Grid.Column>
                 </Grid>
+                { grants.length > 1 ? 
+                    <Grid columns={3} stackable >
+                        {grants.map( grant => <GrantCard grant={grant} key={grant.id} />)}
+                    </Grid>
+                : grants ?
+                <Segment id='loader'>
+                    <Dimmer active inverted>
+                        <Loader size='large'>Loading</Loader>
+                    </Dimmer>
+                </Segment>
+                : <Segment id='empty'><Dimmer active inverted>No Results Found</Dimmer></Segment>}
+                
             </div>
         
     )

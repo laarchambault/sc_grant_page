@@ -33,6 +33,7 @@ const App = () => {
   
 
   const fetchGrants = filterObj => {
+    setGrants(["loading"])
     //filterObj format { states: ["State, ST", "State, ST"], categories: [id, id]}
     fetch('http://localhost:3000/grants/filter', {
       method: 'POST',
@@ -44,7 +45,14 @@ const App = () => {
     .then(r => {
       if(r.ok) {return r.json()} else {throw r}
     })
-    .then(grants => setGrants(grants))
+    .then(grants => {
+      if(grants.length > 0) {
+        setGrants(grants)
+      }
+      else {
+        setGrants("")
+      }
+    })
     
   }
 

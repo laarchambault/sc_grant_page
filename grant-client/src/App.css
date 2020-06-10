@@ -47,6 +47,17 @@ button.ui.button.category {
   background-color: #fff;
 }
 
+#loader, #empty {
+  background-color: #9bb6c5;
+  height: 15rem;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+#empty div.ui.active.dimmer div.content {
+  color: #506a85;
+}
+
 div.grant-card-label {
   overflow: auto;
 }
@@ -85,7 +96,7 @@ div.grant-card-inner {
 }
 
 div.ui.grid>.row {
-  padding: 0;
+  padding: 0 0 .4rem 0;
 }
 
 div.ui.grid {
@@ -174,30 +185,65 @@ div.ui.grid {
     font-size: .6rem;
   }
 
+  #view-page h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #506a85;
+    font-weight: 700;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  div.ui.grid.search-bar {
+    margin-top: 0;
+  }
+
+  div.ui.label {
+    font-size: .6rem;
+    font-weight: 800;
+    letter-spacing: .1rem;
+  }
 
   div.grant-card {
-    width: 400px;
+    width: 20rem;
     max-width: 100%;
-    margin: 1em;
+    margin: 1em 0;
   }
 
   div.grant-card div.ui.huge.header {
     margin-bottom: 0;
+    font-size: 1.1rem;
   }
 
   div.grant-card div.ui.large.header {
     margin: 0 0 .5em;
-    font-size: 1.25rem;
+    font-size: .8rem;
     letter-spacing: 1.5px;
   }
 
+  div.ui.medium.header {
+    margin: .5em 0 .25em 0;
+    font-size: .8rem;
+  }
+
+  div.grant-card h5, div.grant-card p {
+    font-size: .6rem;
+    font-weight: 400;
+    margin-top: 0;
+
+  }
+
   div.grant-card-inner {
-    padding: 1em;
+    padding: 2em;
   }
 
   div.ui.grid {
-    padding: 1rem 0 1rem 0;
+    padding: .25rem 0 1rem 0;
+    margin-top: 1.75rem;
   }
+
+  div.ui.grid.grant-card {
+    margin-top: .1rem;
+  }  
 }
 
 
