@@ -16,8 +16,8 @@ const category_name = props.grant.category.label
     return (
         <div className="grant-card">
             <div className="grant-card-label">
-                <Label color='orange'>{category_name}</Label>
-                <Label color='teal'>{state}</Label>
+                <Label className='orange-label'>{category_name}</Label>
+                <Label className='green-label'>{state}</Label>
             </div>
             <div className="grant-card-inner">
 

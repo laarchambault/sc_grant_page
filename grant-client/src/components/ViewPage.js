@@ -81,7 +81,7 @@ const ViewPage = props => {
                         <Loader size='large'>Loading</Loader>
                     </Dimmer>
                 </Segment>
-                : <Segment id='empty'><Dimmer active inverted>No Results Found</Dimmer></Segment>}
+                : <Segment id='empty'><Dimmer active inverted>No Results Found</Dimmer></Segment>} 
                 
             </div>
         

@@ -78,8 +78,9 @@ const App = () => {
           fetchGrants={fetchGrants}
           grants={grants}
           />
-      }      
+      }    
       </div>
+      <div className='fake-footer'></div>  
     </div>
   );
   

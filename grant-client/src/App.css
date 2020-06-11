@@ -9,7 +9,7 @@ html {
 }
 
 h1 {
-  color: #506a85;
+  color: #406791;
 }
 
 .fake-header-one {
@@ -32,7 +32,7 @@ h1 {
 
 div.ui.horizontal.divider {
   font-size: .75rem;
-  color: #506a85;
+  color: #406791;
 }
 
 #category-div {
@@ -42,24 +42,43 @@ div.ui.horizontal.divider {
 button.ui.button.category {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  border: 2px outset #9bb6c5;
+  border: 2px outset #b4c9d4;
   border-radius: 10px;
   background-color: #fff;
 }
 
 #loader, #empty {
+  background-image: url(./imgs/loading.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #9bb6c5;
-  height: 15rem;
+  height: 20rem;
   width: 80%;
   margin: 2rem auto;
 }
 
+
+#view-page h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: #406791;
+  font-weight: 700;
+  text-align: left;
+}
+
 #empty div.ui.active.dimmer div.content {
-  color: #506a85;
+  color: #406791;
 }
 
 div.grant-card-label {
   overflow: auto;
+}
+div.grant-card-label div.ui.label.green-label {
+  background-color: #6bc04b;
+  color: #fff
+}
+div.grant-card-label div.ui.label.orange-label {
+  background-color: #fa5821;
+  color: #fff
 }
 
 div.grant-card-label .label {
@@ -103,14 +122,422 @@ div.ui.grid {
   font-weight: 500;
 }
 
+
 /* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {...} */
+@media only screen and (max-width: 600px) {
+  
+  .fake-header-one {
+    height: 2.25rem;
+    max-height: 6vh;
+  }
+
+  .fake-header-two {
+    height: 2.75rem;
+    max-height: 9vh;
+  }
+
+  #grant-header {
+    max-width: 100%;
+    height: 35rem;
+    max-height: 45vh;
+    padding-top: 2em;
+    box-shadow: 0 .5rem .5rem #adaeaf9c;
+
+  }
+
+  #grant-header div {
+    max-width: 80%;
+    max-height: 42vh;
+    height: 17rem;
+    padding: 0 1.25em .9em 2em;
+  }
+
+  #grant-header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: .25rem;
+  }
+
+  #grant-header p {
+    font-size: 1.8rem;
+    line-height: 2.2;
+    margin-bottom: 20px;
+    text-shadow: 
+      3px -3px 4px #ffffffc7,
+      3px 3px 4px #ffffffc7,
+      -3px 3px 4px #ffffffc7,
+      -3px -3px 4px #ffffffc7;
+  }
+
+  #window {
+    padding: 3em;
+  }
+
+  #window h1 {
+    font-size: 3rem;
+    letter-spacing: .1rem;
+    margin-top: .75rem
+  }
+
+  div.ui.fluid.search.selection.dropdown.search-page-dropdown {
+    margin: .75rem auto .75rem auto;
+    max-width: 50%;
+  }
+
+  div.visible.menu.transition div.item {
+    font-size: 1.75rem;
+  }
+
+  div.ui.horizontal.divider {
+    margin: 1.25rem 0 1.75rem;
+    font-size: 1.5rem;
+  }
+
+  button.ui.button.category {
+    height: 6rem;
+    min-width: 14rem;
+    max-width: 20rem;
+    margin: .5rem 1rem;
+    font-size: 1.75rem;
+    padding: .5rem;
+  }
+
+  #view-page h1, #empty {
+    font-size: 2rem;
+  }
+
+  #empty, #loader {
+    width: 95%;
+  }
+
+  div.ui.grid.search-bar {
+    margin-top: 0;
+  }
+
+  div.ui.vertical.divider {
+    font-size: 1.3rem;
+  }
+
+  div.ui.label {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+  }
+
+  div.grant-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 1em 0;
+  }
+
+  div.grant-card div.ui.huge.header {
+    margin-bottom: 0;
+    font-size: 2.5rem;
+  }
+
+  div.grant-card div.ui.large.header {
+    margin: 0 0 .5em;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+  }
+
+  div.ui.medium.header {
+    margin: .5em 0 .25em 0;
+    font-size: 2rem;
+  }
+
+  div.grant-card h5, div.grant-card p {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-top: 0;
+
+  }
+
+  div.grant-card-inner {
+    padding: 1em;
+  }
+
+  div.ui.grid {
+    padding: .25rem 0 1rem 0;
+    margin-top: 1.75rem;
+  }
+
+  div.ui.grid.grant-card {
+    margin-top: .1rem;
+  }  
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
+@media only screen and (min-width: 600px) {
+  
+  .fake-header-one {
+    height: 2.25rem;
+    max-height: 6vh;
+  }
+
+  .fake-header-two {
+    height: 2.75rem;
+    max-height: 9vh;
+  }
+
+  #grant-header {
+    max-width: 100%;
+    height: 20rem;
+    max-height: 45vh;
+    padding-top: 2em;
+    box-shadow: 0 .5rem .5rem #adaeaf9c;
+
+  }
+
+  #grant-header div {
+    max-width: 80%;
+    max-height: 42vh;
+    height: 17rem;
+    padding: 0 1.25em .9em 6em;
+  }
+
+  #grant-header h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: .25rem;
+  }
+
+  #grant-header p {
+    font-size: 1.4rem;
+    line-height: 2;
+    margin-bottom: 20px;
+    text-shadow: 
+      3px -3px 4px #ffffffc7,
+      3px 3px 4px #ffffffc7,
+      -3px 3px 4px #ffffffc7,
+      -3px -3px 4px #ffffffc7;
+  }
+
+  #window {
+    padding: 3em;
+  }
+
+  #window h1 {
+    font-size: 1.75rem;
+    letter-spacing: .1rem;
+    margin-top: .75rem
+  }
+
+  div.ui.fluid.search.selection.dropdown.search-page-dropdown {
+    margin: .75rem auto .75rem auto;
+    max-width: 30%;
+  }
+
+  div.visible.menu.transition div.item {
+    font-size: 1rem;
+  }
+
+  div.ui.horizontal.divider {
+    margin: 1.25rem 0 1.75rem;
+  }
+
+  button.ui.button.category {
+    height: 4.9rem;
+    min-width: 10rem;
+    max-width: 14rem;
+    margin: .5rem 1rem;
+    font-size: 1.2rem;
+    padding: .6rem;
+  }
+
+  #view-page h1, #empty {
+    font-size: 2rem;
+  }
+
+  #empty, #loader {
+    width: 90%;
+  }
+
+  div.ui.grid.search-bar {
+    margin-top: 0;
+  }
+
+  div.ui.label {
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: .1rem;
+  }
+
+  div.grant-card {
+    width: 30rem;
+    max-width: 100%;
+    margin: 1em 0;
+  }
+
+  div.grant-card div.ui.huge.header {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+
+  div.grant-card div.ui.large.header {
+    margin: 0 0 .5em;
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+  }
+
+  div.ui.medium.header {
+    margin: .5em 0 .25em 0;
+    font-size: 1.25rem;
+  }
+
+  div.grant-card h5, div.grant-card p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+
+  }
+
+  div.grant-card-inner {
+    padding: 2em;
+  }
+
+  div.ui.grid {
+    padding: .25rem 0 1rem 0;
+    margin-top: 1.75rem;
+  }
+
+  div.ui.grid.grant-card {
+    margin-top: .1rem;
+  }  
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
+@media only screen and (min-width: 768px) {
+  
+  .fake-header-one {
+    height: 2.25rem;
+    max-height: 6vh;
+  }
+
+  .fake-header-two {
+    height: 2.75rem;
+    max-height: 9vh;
+  }
+
+  #grant-header {
+    max-width: 100%;
+    height: 20rem;
+    max-height: 45vh;
+    box-shadow: 0 .5rem .5rem #adaeaf9c;
+
+  }
+
+  #grant-header div {
+    max-width: 60%;
+    max-height: 42vh;
+    height: 17rem;
+    padding: 2em 1.25em .9em 6em;
+  }
+
+  #grant-header h1 {
+    font-size: 2.1rem;
+    font-weight: 900;
+    letter-spacing: .25rem;
+  }
+
+  #grant-header p {
+    font-size: 1.1rem;
+    line-height: 2;
+    margin-bottom: 20px;
+  }
+
+  #window {
+    padding: 3em;
+  }
+
+  #window h1 {
+    font-size: 1.75rem;
+    letter-spacing: .1rem;
+    margin-top: .75rem
+  }
+
+  div.ui.fluid.search.selection.dropdown.search-page-dropdown {
+    margin: .75rem auto .75rem auto;
+    max-width: 30%;
+  }
+
+  div.visible.menu.transition div.item {
+    font-size: 1rem;
+  }
+
+  div.ui.horizontal.divider {
+    margin: 1.25rem 0 1.75rem;
+  }
+
+  button.ui.button.category {
+    height: 3.75rem;
+    min-width: 8rem;
+    max-width: 10rem;
+    margin: .5rem 1rem;
+    font-size: .9rem;
+    padding: .75rem;
+  }
+
+  #view-page h1, #empty {
+    font-size: 2rem;
+  }
+
+  #empty, #loader {
+    width: 85%;
+  }
+
+  div.ui.grid.search-bar {
+    margin-top: 0;
+  }
+
+  div.ui.label {
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: .1rem;
+  }
+
+  div.grant-card {
+    width: 30rem;
+    max-width: 100%;
+    margin: 1em 0;
+  }
+
+  div.grant-card div.ui.huge.header {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+
+  div.grant-card div.ui.large.header {
+    margin: 0 0 .5em;
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+  }
+
+  div.ui.medium.header {
+    margin: .5em 0 .25em 0;
+    font-size: 1.25rem;
+  }
+
+  div.grant-card h5, div.grant-card p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+
+  }
+
+  div.grant-card-inner {
+    padding: 2em;
+  }
+
+  div.ui.grid {
+    padding: .25rem 0 1rem 0;
+    margin-top: 1.75rem;
+  }
+
+  div.ui.grid.grant-card {
+    margin-top: .1rem;
+  }  
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -129,8 +556,7 @@ div.ui.grid {
     max-width: 100%;
     height: 17rem;
     max-height: 45vh;
-    /* margin-bottom: 20px; */
-    box-shadow: 0 .5rem .5rem #adaeaf9c;
+    box-shadow: 0 .15rem .25rem #adaeaf9c;
 
   }
 
@@ -139,7 +565,6 @@ div.ui.grid {
     max-height: 42vh;
     height: 15rem;
     padding: 2em 1.25em .9em 6em;
-    /* margin-bottom: 20px; */
   }
 
   #grant-header h1 {
@@ -183,13 +608,10 @@ div.ui.grid {
     max-width: 8.5rem;
     margin: .5rem 1rem;
     font-size: .6rem;
+    padding: 1rem;
   }
 
-  #view-page h1 {
-    font-family: 'Open Sans', sans-serif;
-    color: #506a85;
-    font-weight: 700;
-    text-align: left;
+  #view-page h1, #empty {
     font-size: 2rem;
   }
 
@@ -246,5 +668,143 @@ div.ui.grid {
   }  
 }
 
+/* Very large screens, 1145px and up */
+@media only screen and (min-width: 1145px) {
+  
+  .fake-header-one {
+    height: 2.25rem;
+    max-height: 6vh;
+  }
+
+  .fake-header-two {
+    height: 2.75rem;
+    max-height: 9vh;
+  }
+
+  #grant-header {
+    max-width: 100%;
+    height: 17rem;
+    max-height: 45vh;
+    box-shadow: 0 .15rem .25rem #adaeaf9c;
+
+  }
+
+  #grant-header div {
+    max-width: 50%;
+    max-height: 42vh;
+    height: 15rem;
+    padding: 2em 1.25em .9em 6em;
+  }
+
+  #grant-header h1 {
+    font-size: 1.75rem;
+    font-weight: 900;
+    letter-spacing: .25rem;
+  }
+
+  #grant-header p {
+    font-size: .8rem;
+    line-height: 2;
+    margin-bottom: 20px;
+  }
+
+  #window {
+    padding: 3em;
+  }
+
+  #window h1 {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    margin-top: .75rem
+  }
+
+  div.ui.fluid.search.selection.dropdown.search-page-dropdown {
+    margin: .75rem auto .75rem auto;
+    max-width: 30%;
+  }
+
+  div.visible.menu.transition div.item {
+    font-size: .6rem;
+  }
+
+  div.ui.horizontal.divider {
+    margin: 1.25rem 0 1.75rem;
+  }
+
+  button.ui.button.category {
+    height: 2.75rem;
+    min-width: 6rem;
+    max-width: 8.5rem;
+    margin: .5rem 1rem;
+    font-size: .6rem;
+    padding: 1rem;
+  }
+
+  #view-page h1, #empty {
+    font-size: 1.5rem;
+  }
+
+  div.ui.grid.search-bar {
+    margin-top: 0;
+  }
+
+  div.search-bar div.ui.vertical.divider {
+    font-size: .75rem;
+  }
+
+  div.ui.label {
+    font-size: .5rem;
+    font-weight: 800;
+    letter-spacing: .1rem;
+  }
+
+  div.grant-card {
+    width: 17rem;
+    max-width: 100%;
+    margin: 1em 0;
+  }
+
+  div.grant-card div.ui.huge.header {
+    margin-bottom: 0;
+    font-size: .9rem;
+  }
+
+  div.grant-card div.ui.large.header {
+    margin: 0 0 .5em;
+    font-size: .7rem;
+    letter-spacing: 1.5px;
+  }
+
+  div.ui.medium.header {
+    margin: .5em 0 .25em 0;
+    font-size: .7rem;
+  }
+
+  div.grant-card h5, div.grant-card p {
+    font-size: .5rem;
+    font-weight: 400;
+    margin-top: 0;
+
+  }
+
+  div.grant-card-inner {
+    padding: 1.75em;
+  }
+
+  div.ui.grid {
+    padding: .25rem 0 1rem 0;
+    margin-top: 1.75rem;
+  }
+
+  div.ui.grid.grant-card {
+    margin-top: .1rem;
+  }  
+}
+
+.fake-footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #005587;
+}
 
 
