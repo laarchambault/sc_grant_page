@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react'
 import GrantCard from './GrantCard'
 import { stateOptions } from './options'
-import { Dropdown, Grid, Segment, Dimmer, Loader, Divider } from 'semantic-ui-react'
+import { Dropdown, Grid, Segment, Dimmer, Loader, Divider, Pagination } from 'semantic-ui-react'
 
 const ViewPage = props => {
     const {selectedCategories, setSelectedCategories, selectedStates, setSelectedStates, categories, grants} = props
@@ -18,6 +18,7 @@ const ViewPage = props => {
     }
     //state used to control multii-select options in dropdowns
     const [categoryValues, setCategoryValues] = useState(initialCatValue(categories, selectedCategories))
+    const [activePage, setActivePage] = useState(1)
 
 
     //creates options for dropdown
@@ -32,6 +33,16 @@ const ViewPage = props => {
         const currentIds = currentCategories.map(cat => cat.id)
         setSelectedCategories(currentIds)
     }, [categoryValues, setSelectedCategories, categories])
+
+    const handlePaginationChange = (e, { activePage }) => {
+        setActivePage(activePage)
+        window.scrollTo(0, 200)
+    }
+
+    const currentPageOfGrants = (pageNumber, grants) => {
+        const startIndex = (pageNumber * 30) - 30;
+        return grants.slice(startIndex, startIndex + 30)
+    }
     
 
     return(
@@ -72,9 +83,21 @@ const ViewPage = props => {
                 </Grid.Column>
                 </Grid>
                 { grants.length > 1 ? 
+                    <>
                     <Grid columns={3} stackable >
-                        {grants.map( grant => <GrantCard grant={grant} key={grant.id} />)}
+                        {currentPageOfGrants(activePage, grants).map( grant => <GrantCard grant={grant} key={grant.id} />)}
                     </Grid>
+                    <Pagination
+                        boundaryRange={0}
+                        ellipsisItem={null}
+                        firstItem={null}
+                        lastItem={null}
+                        siblingRange={1}
+                        activePage={activePage}
+                        onPageChange={handlePaginationChange}
+                        totalPages={Math.ceil(grants.length / 30)}
+                        />
+                    </>
                 : grants ?
                 <Segment id='loader'>
                     <Dimmer active inverted>
