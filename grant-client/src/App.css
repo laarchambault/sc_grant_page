@@ -147,16 +147,18 @@ div.ui.grid {
     max-width: 100%;
     height: 35rem;
     max-height: 45vh;
-    padding-top: 2em;
+    padding: 0;
     box-shadow: 0 .5rem .5rem #adaeaf9c;
 
   }
 
   #grant-header div {
     max-width: 80%;
-    max-height: 42vh;
-    height: 17rem;
-    padding: 0 1.25em .9em 2em;
+    max-height: 45vh;
+    height: 35rem;
+    padding: .5em 1.25em .9em 2em;
+    background-color: #ffffffb2;
+    box-shadow: .5rem 0 .25rem #ffffffb2;
   }
 
   #grant-header h1 {
@@ -169,11 +171,6 @@ div.ui.grid {
     font-size: 1.8rem;
     line-height: 2.2;
     margin-bottom: 20px;
-    text-shadow: 
-      3px -3px 4px #ffffffd2,
-      3px 3px 4px #ffffffc7,
-      -3px 3px 4px #ffffffc7,
-      -3px -3px 4px #ffffffc7;
   }
 
   #window {
@@ -201,7 +198,7 @@ div.ui.grid {
   }
 
   button.ui.button.category {
-    height: 6rem;
+    height: 6.25rem;
     min-width: 14rem;
     max-width: 20rem;
     margin: .5rem 1rem;
@@ -296,16 +293,18 @@ div.ui.grid {
     max-width: 100%;
     height: 20rem;
     max-height: 45vh;
-    padding-top: 2em;
+    padding: 0;
     box-shadow: 0 .5rem .5rem #adaeaf9c;
 
   }
 
   #grant-header div {
     max-width: 80%;
-    max-height: 42vh;
-    height: 17rem;
-    padding: 0 1.25em .9em 6em;
+    max-height: 45vh;
+    height: 20rem;
+    padding: .5em 1.25em .9em 3em;
+    background-color: #ffffffb2;
+    box-shadow: .5rem 0 .25rem #ffffffb2;
   }
 
   #grant-header h1 {
@@ -318,11 +317,6 @@ div.ui.grid {
     font-size: 1.4rem;
     line-height: 2;
     margin-bottom: 20px;
-    text-shadow: 
-      3px -3px 4px #ffffffc7,
-      3px 3px 4px #ffffffc7,
-      -3px 3px 4px #ffffffc7,
-      -3px -3px 4px #ffffffc7;
   }
 
   #window {
@@ -441,14 +435,16 @@ div.ui.grid {
     height: 20rem;
     max-height: 45vh;
     box-shadow: 0 .5rem .5rem #adaeaf9c;
-
+    padding: 0;
   }
 
   #grant-header div {
     max-width: 60%;
-    max-height: 42vh;
-    height: 17rem;
+    max-height: 45vh;
+    height: 20rem;
     padding: 2em 1.25em .9em 6em;
+    background-color: #ffffffb2;
+    box-shadow: .5rem 0 .25rem #ffffffb2;
   }
 
   #grant-header h1 {
@@ -487,7 +483,7 @@ div.ui.grid {
   }
 
   button.ui.button.category {
-    height: 3.75rem;
+    height: 4.2rem;
     min-width: 8rem;
     max-width: 10rem;
     margin: .5rem 1rem;
@@ -577,16 +573,18 @@ div.ui.grid {
     max-width: 100%;
     height: 20rem;
     max-height: 45vh;
+    padding: 0;
     box-shadow: 0 .5rem .5rem #adaeaf9c;
 
   }
 
   #grant-header div {
     max-width: 60%;
-    max-height: 42vh;
-    height: 17rem;
+    max-height: 45vh;
+    height: 20rem;
     padding: 2em 1.25em .9em 6em;
-  }
+    background-color: #ffffffb2;
+    box-shadow: .5rem 0 .25rem #ffffffb2;  }
 
   #grant-header h1 {
     font-size: 2.1rem;
@@ -624,7 +622,7 @@ div.ui.grid {
   }
 
   button.ui.button.category {
-    height: 3.75rem;
+    height: 3.9rem;
     min-width: 8rem;
     max-width: 10rem;
     margin: .5rem 1rem;
@@ -716,15 +714,18 @@ div.ui.grid {
     max-width: 100%;
     height: 17rem;
     max-height: 45vh;
+    padding: 0;
     box-shadow: 0 .15rem .25rem #adaeaf9c;
 
   }
 
   #grant-header div {
     max-width: 50%;
-    max-height: 42vh;
-    height: 15rem;
+    max-height: 45vh;
+    height: 17rem;
     padding: 2em 1.25em .9em 6em;
+    background-color: #ffffffb2;
+    box-shadow: .5rem 0 .25rem #ffffffb2;
   }
 
   #grant-header h1 {
@@ -763,7 +764,7 @@ div.ui.grid {
   }
 
   button.ui.button.category {
-    height: 2.75rem;
+    height: 3.2rem;
     min-width: 6rem;
     max-width: 8.5rem;
     margin: .5rem 1rem;
@@ -850,15 +851,17 @@ div.ui.grid {
     max-width: 100%;
     height: 17rem;
     max-height: 45vh;
+    padding: 0;
     box-shadow: 0 .15rem .25rem #adaeaf9c;
-
   }
 
   #grant-header div {
     max-width: 50%;
-    max-height: 42vh;
-    height: 15rem;
+    max-height: 45vh;
+    height: 17rem;
     padding: 2em 1.25em .9em 6em;
+    background-color: #ffffffb2;
+    box-shadow: .5rem 0 .25rem #ffffffb2;
   }
 
   #grant-header h1 {
@@ -897,7 +900,7 @@ div.ui.grid {
   }
 
   button.ui.button.category {
-    height: 2.75rem;
+    height: 3.2rem;
     min-width: 6rem;
     max-width: 8.5rem;
     margin: .5rem 1rem;
